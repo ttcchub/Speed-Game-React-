@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}

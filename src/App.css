@@ -1,0 +1,150 @@
+.App {
+  margin-top: 4rem;
+  padding: 0.5rem;
+  width: 800px;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.mute-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p span {
+
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.game-info-bar {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.game-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 390px;
+}
+
+.game-score em {
+  /* background-color: white; */
+
+
+  color: black;
+  font-style: inherit;
+
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+.lives {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.start-btn,
+.end-btn {
+
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 25px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Play', sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.start-btn:focus ,
+.end-btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.start-btn:hover ,
+.end-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.start-btn:active ,
+.end-btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  
+}
+
+
+
+
+.start-btn {
+
+  margin-top: 250px;
+}
+.end-btn {
+
+  margin-top: 250px;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    width: 400px;
+  }
+  .circle-container {
+    gap: 1rem;
+  }
+
+  .lives {
+    gap: 0.5rem;
+  }
+}
